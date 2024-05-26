@@ -1,7 +1,10 @@
 import board
 
+LEFT_X = 0
+LEFT_Y = 1
+
 # GPXX
-ANALOG_OUTPUT   = board.GP26
+ANALOG_INPUT   = board.A0
 ANALOG_SELECT_A = board.GP5
 ANALOG_SELECT_B = board.GP4
 
