@@ -3,7 +3,11 @@ import digitalio
 import adafruit_hid
 import usb_hid
 
+from hid_gamepad import Gamepad
+
 BUTTONS = []
+
+gamepad = Gamepad(usb_hid.devices)
 
 # SETUP SWITCHES
 for (name, pin) in pins.SWITCHES:

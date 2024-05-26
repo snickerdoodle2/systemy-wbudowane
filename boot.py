@@ -41,4 +41,6 @@ gamepad = usb_hid.Device(
     out_report_lengths=(0,),   # It does not receive any reports.
 )
 
-usb_hid.enable(gamepad)
+usb_hid.enable(
+    (usb_hid.Device.CONSUMER_CONTROL, gamepad)
+)
