@@ -1,8 +1,11 @@
 import pins
 import digitalio
+import adafruit_hid
+import usb_hid
 
 BUTTONS = []
 
+# SETUP SWITCHES
 for (name, pin) in pins.SWITCHES:
     button = digitalio.DigitalInOut(pin)
     button.direction = digitalio.Direction.INPUT
