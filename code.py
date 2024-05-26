@@ -9,6 +9,8 @@ BUTTONS = []
 
 gamepad = Gamepad(usb_hid.devices)
 
+print("Ready!")
+
 # SETUP SWITCHES
 for (name, pin) in pins.SWITCHES:
     button = digitalio.DigitalInOut(pin)
