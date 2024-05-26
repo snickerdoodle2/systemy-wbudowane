@@ -12,14 +12,21 @@ gamepad = Gamepad(usb_hid.devices)
 print("Ready!")
 
 # SETUP SWITCHES
-for (name, pin) in pins.SWITCHES:
+for (id, pin) in pins.SWITCHES:
     button = digitalio.DigitalInOut(pin)
     button.direction = digitalio.Direction.INPUT
     button.pull = digitalio.Pull.DOWN
-    BUTTONS.append((button, name))
+    BUTTONS.append((button, id))
 
 
 while True:
-    for (button, name) in BUTTONS:
+    toPress = []
+    toRelease = []
+    for (button, id) in BUTTONS:
         if button.value:
-            print(name)
+            toPress.append(id)
+        else:
+            toRelease.append(id)
+
+    gamepad.press_buttons(*toPress)
+    gamepad.release_buttons(*toRelease)
