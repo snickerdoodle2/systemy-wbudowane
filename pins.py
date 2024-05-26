@@ -25,22 +25,22 @@ ACTION_UP = board.GP20
 ACTION_RIGHT = board.GP21
 
 SWITCHES = [
-    (0, ARROW_LEFT),
-    (1, ARROW_DOWN),
-    (2, ARROW_UP),
-    (3, ARROW_RIGHT),
+    (1, ARROW_LEFT),
+    (2, ARROW_DOWN),
+    (3, ARROW_UP),
+    (4, ARROW_RIGHT),
 
-    (4, TRIGGER_LEFT),
-    (5, BUMPER_LEFT),
+    (5, TRIGGER_LEFT),
+    (6, BUMPER_LEFT),
 
-    (6, SELECT),
-    (7, START),
+    (7, SELECT),
+    (8, START),
 
-    (8, TRIGGER_RIGHT),
-    (9, BUMPER_RIGHT),
+    (9, TRIGGER_RIGHT),
+    (10, BUMPER_RIGHT),
 
-    (10, ACTION_LEFT),
-    (11, ACTION_DOWN),
-    (12, ACTION_UP),
-    (13, ACTION_RIGHT),
+    (11, ACTION_LEFT),
+    (12, ACTION_DOWN),
+    (13, ACTION_UP),
+    (14, ACTION_RIGHT),
 ]
